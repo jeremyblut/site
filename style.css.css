@@ -1,0 +1,78 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  cursor: url('https://cdn.glitch.com/0e5ef056-29f4-48e6-bcc9-8719f14eda41%2Fsparkles_2728.png?v=1576957989121'), auto;
+  Background-color:#FFEFF0;
+}
+
+.plant{
+  height:150px;
+  width:150px;
+}
+
+h1 {
+  font-style:medium;
+  color: #373fff;
+  font-size: 1em;
+}
+
+.outer{
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+display: table-cell;
+vertical-align: middle;
+}
+
+.letssee {  
+  margin-left: auto;
+  margin-right: auto;
+  Max-width: 400px;
+}
+
+.avatar{
+  
+  text-align:center;
+}
+
+p {
+font-family: "helvetica", helvetica, arial, sans-serif;
+  font-size:1em;
+  font-weight:medium;
+}
+
+
+.bubble {
+  margin:10px;
+  padding:10px;
+  padding-right:20px;
+  padding-left:20px;
+  background-color: ;
+  font-weight:bold;
+}
+
+.bubble2 {
+  display:inline;
+  background-color: ;
+  font-weight:bold;
+  color:#e8385e;
+  font-size:1.2em;
+} 
+
+.bubble3 {
+  display:inline;
+  background-color: ;
+  font-weight:bold;
+  color:#6336d6;
+  font-size:1.2em;
+} 
+a{
+  color:#3b4bff;
+}
