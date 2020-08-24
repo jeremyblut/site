@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53112409-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53112409-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-53112409-2');
-  gtag('config', 'GA_TRACKING_ID', { 'anonymize_ip': true });
-</script>
+    gtag('config', 'UA-53112409-2');
+    gtag('config', 'GA_TRACKING_ID', { 'anonymize_ip': true });
+  </script>
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>jeremy.toys - jeremy edelblut's personal website</title>
-    <meta name="description" content="Hey, I'm Jeremy Edelblut. I make toys, games, and art.">
+  <title>jeremy.toys - jeremy edelblut's personal website</title>
+  <meta name="description" content="Hey, I'm Jeremy Edelblut. I make toys, games, and art.">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap"
-      rel="stylesheet"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="img/Icon.png"
-    />
+  <link rel="icon" type="image/png" href="img/Icon.png" />
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- import the webpage's javascript file -->
-    <script src="script.js" defer></script>
-  </head>
+  <!-- import the webpage's javascript file -->
+  <script src="script.js" defer></script>
+</head>
   <body>
+    <!-- navigation -->
     <div class="container-1">
       <div class="box-1">
         <h3>
           <!-- <img class="icon" src="" alt="" /> -->
-          <a class="nav" href="https://jeremy.toys" style="display:inline;"
+          <a class="nav" href="index.html" style="display:inline;"
             >jeremy.toys</a
           >
         </h3>
         <p></p>
+      </div>
+      <div class="push">
+        <h3>
+          <a class="nav" href="blog.html">blog</a>
+        </h3>
       </div>
       <div class="box-2">
         <h3>
@@ -53,14 +52,14 @@
         </h3>
       </div>
     </div>
-
+    <!-- pagecontent -->
     <div class="fillspace">
       <div class="container-2">
         <div class="container-2-box">
           <img
             class="bodyimage"
             src="img/Me.png"
-            alt=""
+            alt="picture of jeremy"
           />
         </div>
 
@@ -69,31 +68,37 @@
             I’m Jeremy!
           </h4>
           <p>
-            I make toys, games, and art.
-            <br /><br />
-            See the latest games <a href="https://play.google.com/store/apps/details?id=com.Senet.penrose">here</a>, and
-            other fun things in my <a href="shop.html">shop.</a> <br /><br />
-            If you want to follow my journey you can leave your email
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeTEcb8gKhe2U6pcjxUOLP3lLA7xFYqe1MezyqbIAzFc2_9bw/viewform"
-              >here</a
-            >. <br /><br />
+            I make toys, <a href="https://play.google.com/store/apps/details?id=com.Senet.penrose">games</a>, and art. <br /><br />
+            If you want to follow my journey you can leave your email:
           </p>
-          <a
-            href="https://www.instagram.com/jedelblut/"><img
-            class="icon"
-            src="img/insta.png"
-            alt="Instagram"
-          /></a>
-          <a
-            href="mailto:j.edelblut@gmail.com"><img
-            class="icon"
-            src="img/mail.png"
-            alt="mail"
-          /></a>
-        </div>
 
-        <div class="break"></div>
+          <form
+            action="https://gumroad.com/follow_from_embed_form"
+            class="form gumroad-follow-form-embed"
+            method="post"
+          >
+            <input name="seller_id" type="hidden" value="2508233702827" />
+            <input name="email" placeholder="Your email address" type="email" />
+            <button data-custom-highlight-color="" type="submit">
+              Subscribe
+            </button>
+          </form>
+
+          <br />
+
+          <img
+            class="icon"
+            src="img/Mail.png"
+            alt="mail"
+          />
+          <img
+            class="icon"
+            src="img/Insta.png"
+            alt="Instagram"
+          />
+
+          <div class="break"></div>
+        </div>
       </div>
     </div>
   </body>

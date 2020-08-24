@@ -1,7 +1,14 @@
+/* shared code */
+
 .container-1 {
   display: flex;
   justify-content: space-between;
 }
+
+.push {
+  margin-left: auto;
+}
+
 .container-2 {
   display: flex;
   justify-content: center;
@@ -10,113 +17,91 @@
   /* border: 1px #ccc solid; */
   flex-wrap: wrap;
 }
-.container-1 div,
+
+.container-1 div {
+  /*  border: 1px #ccc solid; */
+  padding: 5px;
+  padding-right: 25px;
+  padding-left: 10px;
+}
+
 .container-2 div {
-/*  border: 1px #ccc solid; */
+  /*  border: 1px #ccc solid; */
   padding: 5px;
   padding-right: 35px;
   padding-left: 20px;
 }
-.fillspace {
-  display: flex ;
-  min-height: 80%;
-  padding: 10px;
-}
+
 .container-2-box {
   min-width: 260px;
   max-width: 260px;
 }
-.bodyimage,
-.bodyimage-print,
-.bodyimage-sticker,
-.bodyimage-book{
-  width: 100%;
-  min-width: auto;
-  max-width: 350px;
-  min-height: auto;
-  border-radius:5px;
+
+.fillspace {
+  display: flex;
+  min-height: 80%;
+  padding: 10px;
 }
-.bodyimage{transform: rotate(10deg); margin-top:10px;  
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
-.bodyimage-sticker{transform: rotate(10deg); 
+
+.nav {
+  text-decoration: none;
 }
-.bodyimage-book{transform: rotate(-5deg); 
+
+a:hover {
+  text-decoration: none;
 }
-.bodyimage-print{transform: rotate(5deg); 
-}
-.bodyimage-sticker:hover{
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-.bodyimage-book:hover{
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-@keyframes shake {
-  0% { transform: translate(1px, 1px)  }
-  10% { transform: translate(-1px, -2px)  }
-  20% { transform: translate(-3px, 0px)  }
-  30% { transform: translate(3px, 2px)  }
-  40% { transform: translate(1px, -1px)  }
-  50% { transform: translate(-1px, 2px) }
-  60% { transform: translate(-3px, 1px)  }
-  70% { transform: translate(3px, 1px) }
-  80% { transform: translate(-1px, -1px)  }
-  90% { transform: translate(1px, 2px)  }
-  100% { transform: translate(1px, -2px)  }
-}
-h3 {
+
+a {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
-h4 {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 44px;
-  margin-bottom:2px;
+
+.icon {
+  width: 24px;
+  height: 24px;
+  padding-right: 10px;
 }
-h5 {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 44px;
-  margin-bottom:2px;
-  text-align:center;
-}
+
 p {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 20;
 }
-.shop02{
-  transform: rotate(3deg);
-  text-align:center;
-}
-.shop01{
-  transform: rotate(-3deg);
-  text-align:center;
-}
-.icon {
-  width: 24px;
-  padding-right: 10px;
-}
-a {
+
+h3 {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 20;
+  font-weight: 600;
 }
-a:hover {
-  text-decoration: none;
+
+h4 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 44px;
+  margin-bottom: 2px;
 }
-.nav{
-  text-decoration: none;
+
+h5 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 44px;
+  margin-bottom: 2px;
+  text-align: center;
 }
+
+/* for the index/home */
+
 body {
   position: absolute;
   width: 100%;
@@ -124,11 +109,183 @@ body {
   background-color: #4643f0;
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
-.shop{
+
+.bodyimage {
+  width: 100%;
+  min-width: auto;
+  max-width: 350px;
+  min-height: auto;
+  border-radius: 5px;
+}
+
+.bodyimage {
+  transform: rotate(5deg);
+  margin-top: 10px;
+}
+
+/* for the shop */
+
+.shop {
   background-color: #ff303e;
 }
 
-.break {
-  flex-basis: 100%;
-  height: 0;
+.shop02 {
+  transform: rotate(3deg);
+  text-align: center;
+}
+
+.shop01 {
+  transform: rotate(-3deg);
+  text-align: center;
+}
+
+.shopimage,
+.shopimage-print,
+.shopimage-sticker,
+.shopimage-book {
+  width: 100%;
+  min-width: auto;
+  max-width: 350px;
+  min-height: auto;
+  border-radius: 5px;
+}
+
+.shopimage {
+  transform: rotate(10deg);
+  margin-top: 10px;
+}
+.shopimage-sticker {
+  transform: rotate(10deg);
+}
+.shopimage-book {
+  transform: rotate(-5deg);
+}
+.shopimage-print {
+  transform: rotate(5deg);
+}
+
+.shopimage-sticker:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.shopimage-book:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px);
+  }
+  10% {
+    transform: translate(-1px, -2px);
+  }
+  20% {
+    transform: translate(-3px, 0px);
+  }
+  30% {
+    transform: translate(3px, 2px);
+  }
+  40% {
+    transform: translate(1px, -1px);
+  }
+  50% {
+    transform: translate(-1px, 2px);
+  }
+  60% {
+    transform: translate(-3px, 1px);
+  }
+  70% {
+    transform: translate(3px, 1px);
+  }
+  80% {
+    transform: translate(-1px, -1px);
+  }
+  90% {
+    transform: translate(1px, 2px);
+  }
+  100% {
+    transform: translate(1px, -2px);
+  }
+}
+
+/* for the blog */
+
+.blog-text {
+  min-width: auto;
+  max-width: 500px;
+}
+
+.blog-image {
+  width: 100%;
+  min-width: auto;
+  max-width: 500px;
+  min-height: auto;
+  border-radius: 2px;
+}
+
+/* gumbutton */
+
+.gumroad-follow-form-embed {
+  zoom: 1;
+}
+.gumroad-follow-form-embed:before,
+.gumroad-follow-form-embed:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.gumroad-follow-form-embed:after {
+  clear: both;
+}
+.gumroad-follow-form-embed * {
+  border-radius:0px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box !important;
+  float: left !important;
+}
+.gumroad-follow-form-embed input {
+  border-radius:0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  background: #fff;
+  border-right: 0;
+  color: #aaa;
+  padding: 10px;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  width: 65% !important;
+  height: 40px !important;
+}
+.gumroad-follow-form-embed button {
+  border-radius:0px;
+  display: inline-block;
+  padding: 11px 11px 12px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  line-height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background: #ff303e;
+  height: 40px !important;
+  width: 35% !important;
+}
+
+.gumroad-follow-form-embed button:hover {
+  border-radius:0px;
+  display: inline-block;
+  padding: 11px 11px 12px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  line-height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background: #fcad03;
+  height: 40px !important;
+  width: 35% !important;
 }
