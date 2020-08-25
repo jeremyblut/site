@@ -225,6 +225,20 @@ body {
   border-radius: 2px;
 }
 
+.video-responsive{
+  position: relative;
+  width: 90%;
+  padding-bottom: 56.25%; 
+  height: 300px;
+}
+.video-responsive iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 90%;
+  height: 300px;
+}
+
 /* gumbutton */
 
 .gumroad-follow-form-embed {
