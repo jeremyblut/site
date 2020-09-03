@@ -1,5 +1,10 @@
 /* shared code */
 
+body, html {
+  box-sizing: border-box;
+  margin:0px;
+}
+
 .container-1 {
   display: flex;
   justify-content: space-between;
@@ -22,7 +27,7 @@
   /*  border: 1px #ccc solid; */
   padding: 5px;
   padding-right: 25px;
-  padding-left: 10px;
+  padding-left: 25px;
 }
 
 .container-2 div {
