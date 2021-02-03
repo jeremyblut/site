@@ -68,8 +68,8 @@ a {
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   padding-right: 10px;
 }
 
@@ -121,9 +121,7 @@ body {
   max-width: 350px;
   min-height: auto;
   border-radius: 5px;
-}
 
-.bodyimage {
   transform: rotate(5deg);
   margin-top: 10px;
 }
