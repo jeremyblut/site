@@ -1,70 +1,78 @@
 /* shared code */
 
-body, html {
-  box-sizing: border-box;
-  margin:0px;
+body {
+  margin: 0px;
+  background-image: url("img/BodyS.gif");
+  background-repeat: repeat;
 }
 
+/* header */
 .container-1 {
   display: flex;
   justify-content: space-between;
 }
-
+.container-1 div {
+  /*  border: 1px #ccc solid; */
+  padding: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
 .push {
   margin-left: auto;
 }
+.nav {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
 
+/* content homepage */
+
+.container-2 div {
+  /*  border: 1px #ccc solid; */
+  padding: 20px;
+}
 .container-2 {
+  /* border: 1px #ccc solid; */
   display: flex;
   justify-content: center;
   align-content: center;
   flex: 1;
-  /* border: 1px #ccc solid; */
   flex-wrap: wrap;
 }
-
-.container-1 div {
-  /*  border: 1px #ccc solid; */
-  padding: 5px;
-  padding-right: 25px;
-  padding-left: 25px;
-}
-
-.container-2 div {
-  /*  border: 1px #ccc solid; */
-  padding: 5px;
-  padding-right: 30px;
-  padding-left: 30px;
-}
-
 .container-2-box {
   min-width: 260px;
   max-width: 260px;
 }
 
 .fillspace {
-  display: flex;
-  min-height: 80%;
+  height: 85vh;
   padding: 10px;
+  display: flex;
 }
+
+.centers {
+
+  margin:auto;
+}
+
+/* @media (max-width: 650px) and (min-width: 400px){
+  .fillspace {
+    display:inline;
+  }
+} */
+
+
 
 .break {
   flex-basis: 100%;
-  height: 0;
-}
-
-.nav {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  height: 0px;
 }
 
 .icon {
@@ -91,8 +99,7 @@ h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 30px;
-  line-height: 44px;
-  margin-bottom: 2px;
+  margin: 2px;
 }
 
 h5 {
@@ -108,71 +115,44 @@ h5 {
 /* for the index/home */
 
 body {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   background-color: #4643f0;
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .bodyimage {
   width: 100%;
-  min-width: auto;
   max-width: 350px;
-  min-height: auto;
-  border-radius: 5px;
-
-  transform: rotate(5deg);
-  margin-top: 10px;
+  transform: rotate(3deg);
+  border-radius:5px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* for the shop */
 
 .shop {
-  background-color: #ff303e;
-}
-
-.shop02 {
-  transform: rotate(3deg);
-  text-align: center;
+  background-color: rgb(26, 26, 26);
+  background-image: none;
 }
 
 .shop01 {
-  transform: rotate(-3deg);
-  text-align: center;
-}
-
-.shopimage,
-.shopimage-print,
-.shopimage-sticker,
-.shopimage-book {
-  width: 100%;
-  min-width: auto;
-  max-width: 350px;
-  min-height: auto;
-  border-radius: 5px;
+  text-align: left;
+  background-color: red;
+  padding: 5px;
+  margin: 3px;
+  font-weight: 500;
 }
 
 .shopimage {
-  transform: rotate(10deg);
-  margin-top: 10px;
-}
-.shopimage-sticker {
-  transform: rotate(10deg);
-}
-.shopimage-book {
-  transform: rotate(-5deg);
-}
-.shopimage-print {
-  transform: rotate(5deg);
+  width: 100%;
+  min-width: auto;
+  max-width: 600px;
+  min-height: auto;
+  background-color: white;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+  /* border-radius:5px; */
 }
 
-.shopimage-sticker:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-
-.shopimage-book:hover {
+.shopimage:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -180,36 +160,47 @@ body {
 @keyframes shake {
   0% {
     transform: translate(1px, 1px);
+    transform: rotate(2deg);
   }
   10% {
     transform: translate(-1px, -2px);
+    transform: rotate(-1deg);
   }
   20% {
     transform: translate(-3px, 0px);
+    transform: rotate(2deg);
   }
   30% {
     transform: translate(3px, 2px);
+    transform: rotate(-1deg);
   }
   40% {
     transform: translate(1px, -1px);
+    transform: rotate(2deg);
   }
   50% {
     transform: translate(-1px, 2px);
+    transform: rotate(-2deg);
   }
   60% {
     transform: translate(-3px, 1px);
+    transform: rotate(2deg);
   }
   70% {
     transform: translate(3px, 1px);
+    transform: rotate(2deg);
   }
   80% {
     transform: translate(-1px, -1px);
+    transform: rotate(-1deg);
   }
   90% {
     transform: translate(1px, 2px);
+    transform: rotate(2deg);
   }
   100% {
     transform: translate(1px, -2px);
+    transform: rotate(-1deg);
   }
 }
 
@@ -222,99 +213,29 @@ body {
 
 .blog-image {
   width: 100%;
-  min-width: auto;
   max-width: 500px;
-  min-height: auto;
-  border-radius: 2px;
 }
 
-.video-responsive{
+.video-responsive {
   position: relative;
   width: 90%;
-  padding-bottom: 56.25%; 
+  padding-bottom: 56.25%;
   height: 300px;
 }
-.video-responsive iframe{
+.video-responsive iframe {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 90%;
   height: 300px;
 }
 
 .date {
-  font-weight: 500;
-  font-size: 12px;
+  font-weight:500;
+  font-size:12px;
 }
 
-.container-post{
-  background-color:red;
-  background: #1D1211;
+.post {
+  background: #1d1211;
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-
-/* gumbutton */
-
-.gumroad-follow-form-embed {
-  zoom: 1;
-}
-.gumroad-follow-form-embed:before,
-.gumroad-follow-form-embed:after {
-  display: table;
-  line-height: 0;
-  content: "";
-}
-.gumroad-follow-form-embed:after {
-  clear: both;
-}
-.gumroad-follow-form-embed * {
-  border-radius:0px;
-  margin: 0;
-  border: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box !important;
-  float: left !important;
-}
-.gumroad-follow-form-embed input {
-  border-radius:0px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  background: #fff;
-  border-right: 0;
-  color: #aaa;
-  padding: 10px;
-  text-rendering: optimizeLegibility;
-  font-smoothing: antialiased;
-  width: 65% !important;
-  height: 40px !important;
-}
-.gumroad-follow-form-embed button {
-  border-radius:0px;
-  display: inline-block;
-  padding: 11px 11px 12px;
-  cursor: pointer;
-  color: #fff;
-  font-size: 14px;
-  line-height: 100%;
-  font-family: "Montserrat", sans-serif;
-  background: #ff303e;
-  height: 40px !important;
-  width: 35% !important;
-}
-
-.gumroad-follow-form-embed button:hover {
-  border-radius:0px;
-  display: inline-block;
-  padding: 11px 11px 12px;
-  cursor: pointer;
-  color: #fff;
-  font-size: 14px;
-  line-height: 100%;
-  font-family: "Montserrat", sans-serif;
-  background: #fcad03;
-  height: 40px !important;
-  width: 35% !important;
 }
