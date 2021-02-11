@@ -58,8 +58,7 @@ a {
 }
 
 .centers {
-
-  margin:auto;
+  margin: auto;
 }
 
 /* @media (max-width: 650px) and (min-width: 400px){
@@ -67,8 +66,6 @@ a {
     display:inline;
   }
 } */
-
-
 
 .break {
   flex-basis: 100%;
@@ -85,6 +82,7 @@ p {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  line-height: 1.5em;
   font-size: 20;
 }
 
@@ -129,30 +127,28 @@ body {
 
 /* for the shop */
 
-.shop {
-  background-color: rgb(26, 26, 26);
+.work {
+  background-color: #1b0c0c;
   background-image: none;
 }
 
-.shop01 {
+.work01 {
   text-align: left;
-  background-color: red;
   padding: 5px;
   margin: 3px;
   font-weight: 500;
 }
 
-.shopimage {
+.workimage {
   width: 100%;
   min-width: auto;
   max-width: 600px;
   min-height: auto;
   background-color: white;
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
-  /* border-radius:5px; */
 }
 
-.shopimage:hover {
+.workimage:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
@@ -208,15 +204,20 @@ body {
 
 .blog-text {
   min-width: auto;
-  max-width: 500px;
+  max-width: 725px;
 }
 
 .blog-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 725px;
 }
 
-.video-responsive {
+.blog-image-02 {
+  width: 100%;
+  max-width: 230px;
+}
+
+/* .video-responsive {
   position: relative;
   width: 90%;
   padding-bottom: 56.25%;
@@ -228,14 +229,29 @@ body {
   left: 0;
   width: 90%;
   height: 300px;
-}
+} */
 
 .date {
-  font-weight:500;
-  font-size:12px;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .post {
-  background: #1d1211;
-  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25); */
+}
+
+.container-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-content: center;
+}
+.container-3 div {
+  padding: 10px;
+  margin: none;
+}
+
+.container-3-box {
+  min-width: auto;
+  max-width: 360px;
 }
