@@ -1,16 +1,16 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style.css" />
-    <title>Password Protected Page</title>
-    <style>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap"
+            rel="stylesheet"
+            />
+        <link rel="stylesheet" href="style.css" />
+        <title>Password Protected Page</title>
+        <style>
         html, body {
             margin: 0;
             width: 100%;
@@ -31,7 +31,7 @@
         #dialogText {
             padding: 10px 30px;
             color:white;
-            background-color:#1d1211;;
+            background-color:#121110;;
         }
         
         #dialogWrap {
@@ -61,7 +61,7 @@
         }
         #passArea {
             padding: 20px 30px;
-            background-color:#1d1211;;
+            background-color:#121110;;
         }
         #passArea > * {
             margin: 5px auto;
@@ -124,40 +124,44 @@
             color: #999;
         }
     </style>
-  </head>
-  <body>       
-      
-    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
+    </head>
+    <body>
+
+        <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
 
 
-    <div id="dialogWrap">
+        <div id="dialogWrap">
 
-              <h3>
-                <a class="nav2" href="index.html" style="display: inline">Home</a>
-              </h3>
-     
+            <h3>
+                <a class="nav2" href="index.html" style="display: inline">🡤
+                    Back</a>
+            </h3>
 
-        <div id="dialogWrapCell">
-            
-            <div id="mainDialog">
-                <!-- <div id="dialogText">This page is password protected.</div> -->
-                <div id="passArea">
-                    <p id="passwordPrompt">Password</p>
-                    <input id="pass" type="password" name="pass" autofocus>
-                    <div>
-                        <span id="messageWrapper">
-                            <span id="invalidPass" class="notifyText">Nope... -_- </span>
-                            <span id="success" class="notifyText">Yay!</span>
-                            &nbsp;
-                        </span>
-                        <button id="submitPass" type="button">Enter</button>
-                        <div style="clear: both;"></div>
+
+            <div id="dialogWrapCell">
+
+                <div id="mainDialog">
+                    <!-- <div id="dialogText">This page is password protected.</div> -->
+                    <div id="passArea">
+                        <p id="passwordPrompt">Password</p>
+                        <input id="pass" type="password" name="pass" autofocus>
+                        <div>
+                            <span id="messageWrapper">
+                                <span id="invalidPass" class="notifyText">Nope...
+                                    -_- </span>
+                                <span id="success" class="notifyText">Yay!</span>
+                                &nbsp;
+                            </span>
+                            <button id="submitPass" type="button">Enter</button>
+                            <div style="clear: both;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script>
+
+
+        <script>
 /*
 CryptoJS v3.1.2
 code.google.com/p/crypto-js
@@ -194,7 +198,7 @@ b.keySize,b.ivSize);l.iv=d.iv;b=a.encrypt.call(this,b,c,d.key,l);b.mixIn(d);retu
 8&255]]^n[l[k&255]]},encryptBlock:function(a,b){this._doCryptBlock(a,b,this._keySchedule,t,r,w,v,l)},decryptBlock:function(a,c){var d=a[c+1];a[c+1]=a[c+3];a[c+3]=d;this._doCryptBlock(a,c,this._invKeySchedule,b,x,q,n,s);d=a[c+1];a[c+1]=a[c+3];a[c+3]=d},_doCryptBlock:function(a,b,c,d,e,j,l,f){for(var m=this._nRounds,g=a[b]^c[0],h=a[b+1]^c[1],k=a[b+2]^c[2],n=a[b+3]^c[3],p=4,r=1;r<m;r++)var q=d[g>>>24]^e[h>>>16&255]^j[k>>>8&255]^l[n&255]^c[p++],s=d[h>>>24]^e[k>>>16&255]^j[n>>>8&255]^l[g&255]^c[p++],t=
 d[k>>>24]^e[n>>>16&255]^j[g>>>8&255]^l[h&255]^c[p++],n=d[n>>>24]^e[g>>>16&255]^j[h>>>8&255]^l[k&255]^c[p++],g=q,h=s,k=t;q=(f[g>>>24]<<24|f[h>>>16&255]<<16|f[k>>>8&255]<<8|f[n&255])^c[p++];s=(f[h>>>24]<<24|f[k>>>16&255]<<16|f[n>>>8&255]<<8|f[g&255])^c[p++];t=(f[k>>>24]<<24|f[n>>>16&255]<<16|f[g>>>8&255]<<8|f[h&255])^c[p++];n=(f[n>>>24]<<24|f[g>>>16&255]<<16|f[h>>>8&255]<<8|f[k&255])^c[p++];a[b]=q;a[b+1]=s;a[b+2]=t;a[b+3]=n},keySize:8});u.AES=p._createHelper(d)})();
     </script>
-    <script>
+        <script>
 /*
 CryptoJS v3.1.2
 code.google.com/p/crypto-js
@@ -215,7 +219,7 @@ this._hasher;e=d.finalize(e);d.reset();return d.finalize(this._oKey.clone().conc
 (function(){var g=CryptoJS,j=g.lib,e=j.Base,d=j.WordArray,j=g.algo,m=j.HMAC,n=j.PBKDF2=e.extend({cfg:e.extend({keySize:4,hasher:j.SHA1,iterations:1}),init:function(d){this.cfg=this.cfg.extend(d)},compute:function(e,b){for(var g=this.cfg,k=m.create(g.hasher,e),h=d.create(),j=d.create([1]),n=h.words,a=j.words,c=g.keySize,g=g.iterations;n.length<c;){var p=k.update(b).finalize(j);k.reset();for(var f=p.words,v=f.length,s=p,t=1;t<g;t++){s=k.finalize(s);k.reset();for(var x=s.words,r=0;r<v;r++)f[r]^=x[r]}h.concat(p);
 a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).compute(d,b)}})();
     </script>
-    <script>
+        <script>
         /*! srcdoc-polyfill - v0.1.1 - 2013-03-01
         * http://github.com/jugglinmike/srcdoc-polyfill/
         * Copyright (c) 2013 Mike Pennisi; Licensed MIT */
@@ -289,7 +293,7 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
 
         }( this, this.document ));
     </script>
-    <script>
+        <script>
         var pl = {"salt":"oHawzQkK8sEPL0BipLakoeOokkWukqUz5dEDhFqNKAY=","iv":"WKjSq6hn/a+ojqUb2vLTnA==","data":"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"};
         
         var submitPass = document.getElementById('submitPass');
@@ -348,5 +352,5 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
             return decrypted.toString(CryptoJS.enc.Utf8);
         }
     </script>
-  </body>
+    </body>
 </html>

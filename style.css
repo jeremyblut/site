@@ -2,8 +2,10 @@
 
 body {
   margin: 0px;
-  background-image: url("img/BodyS.gif");
+  background-image: url("img/Back01.gif");
   background-repeat: repeat;
+  background-color: #4643f0;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 /* header */
@@ -36,7 +38,6 @@ a {
 
 .container-2 div {
   /*  border: 1px #ccc solid; */
-  padding: 20px;
 }
 .container-2 {
   /* border: 1px #ccc solid; */
@@ -49,6 +50,7 @@ a {
 .container-2-box {
   min-width: 260px;
   max-width: 260px;
+  padding: 20px;
 }
 
 .fillspace {
@@ -95,7 +97,7 @@ h3 {
 h4 {
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 30px;
   margin: 2px;
 }
@@ -112,11 +114,6 @@ h5 {
 
 /* for the index/home */
 
-body {
-  background-color: #4643f0;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
 .bodyimage {
   width: 100%;
   max-width: 350px;
@@ -125,11 +122,18 @@ body {
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* for the shop */
+.bodyimage:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+/* for the work */
 
 .work {
-  background-color: #1b0c0c;
-  background-image: none;
+  background-color: #232325;
+  /* background-image: none; */
+  background-image: url("img/Back01.gif");
+  background-repeat: repeat;
 }
 
 .work01 {
@@ -144,7 +148,6 @@ body {
   min-width: auto;
   max-width: 600px;
   min-height: auto;
-  background-color: white;
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -217,6 +220,11 @@ body {
   max-width: 230px;
 }
 
+li {
+  color:white;
+  max-width: 625px;
+}
+
 /* .video-responsive {
   position: relative;
   width: 90%;
@@ -237,21 +245,32 @@ body {
 }
 
 .post {
+  padding: 8px;
   /* box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25); */
 }
 
 .container-3 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   align-content: center;
-}
-.container-3 div {
-  padding: 10px;
-  margin: none;
+  padding: none;
 }
 
 .container-3-box {
   min-width: auto;
   max-width: 360px;
+  padding:5px;
+}
+
+
+/* for links page */
+
+.links {
+  background-color: #4e1392;
+  padding:2px;
+}
+.links:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
