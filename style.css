@@ -222,6 +222,7 @@ h5 {
 
 li {
   color:white;
+  min-width: auto;
   max-width: 625px;
 }
 
@@ -269,6 +270,15 @@ li {
 .links {
   background-color: #4e1392;
   padding:2px;
+
+  -ms-word-break: break-all;
+    word-break: break-all;
+    /* Non standard for webkit */
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 .links:hover {
   animation: shake 0.5s;
