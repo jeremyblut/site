@@ -1,5 +1,5 @@
 \ ゜o゜)ノ
 
-This is the personal website of Jeremy Edelblut :D
+This is the personal website of Jeremy :D
 
 \ ゜o゜)ノ
