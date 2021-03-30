@@ -54,9 +54,10 @@ a {
 }
 
 .fillspace {
-  height: 85vh;
-  padding: 10px;
+  height: 70vh;
+  /* padding: 10px; */
   display: flex;
+
 }
 
 .centers {
@@ -75,8 +76,8 @@ a {
 }
 
 .icon {
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
   padding-right: 10px;
 }
 
@@ -214,7 +215,8 @@ h5 {
 
 .blog-image {
   width: 100%;
-  max-width: 725px;
+  max-width:725px;
+  transform: rotate(-2deg);
 }
 
 .blog-image-02 {
@@ -285,4 +287,23 @@ li {
 .links:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
+}
+
+
+
+.main {
+  width: 90%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  padding:10px;
+  max-width: 725px;
+}
+
+
+.blog-image:hover {
+  box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.473);
+
 }
