@@ -53,9 +53,16 @@ a {
   padding: 20px;
 }
 
+.container-3 {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 100px; */
+  padding:10px;
+  margin-top: 40px;
+}
+
 .fillspace {
-  height: 85vh;
-  /* padding: 10px; */
+  height: 75vh;
   display: flex;
 }
 
@@ -63,15 +70,15 @@ a {
   margin: auto;
 }
 
-/* @media (max-width: 650px) and (min-width: 400px){
-  .fillspace {
-    display:inline;
+@media (max-width: 650px) and (min-width: 400px){
+  .container-2 {
+    align-content: initial;
   }
-} */
+}
 
 .break {
   flex-basis: 100%;
-  height: 0px;
+  height: 1px;
 }
 
 .icon {
@@ -214,13 +221,8 @@ h5 {
 
 .blog-image {
   width: 100%;
-  max-width:725px;
+  max-width:425px;
   transform: rotate(-2deg);
-}
-
-.blog-image-02 {
-  width: 100%;
-  max-width: 230px;
 }
 
 li {
@@ -228,20 +230,6 @@ li {
   min-width: auto;
   max-width: 625px;
 }
-
-/* .video-responsive {
-  position: relative;
-  width: 90%;
-  padding-bottom: 56.25%;
-  height: 300px;
-}
-.video-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  height: 300px;
-} */
 
 .date {
   font-weight: 500;
@@ -251,20 +239,6 @@ li {
 .post {
   padding: 8px;
   /* box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25); */
-}
-
-.container-3 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  padding: none;
-}
-
-.container-3-box {
-  min-width: auto;
-  max-width: 360px;
-  padding:5px;
 }
 
 
@@ -288,26 +262,7 @@ li {
   animation-iteration-count: infinite;
 }
 
-
-
-.main {
-  width: 90%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
-  padding:10px;
-  max-width: 725px;
-}
-
-
 .blog-image:hover {
   box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.473);
 
-}
-
-@media only screen and (min-width: 600px) {
-  .main {
-    margin-top: -30px;
-  }
 }
