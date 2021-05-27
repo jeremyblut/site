@@ -5,7 +5,7 @@ body {
   background-image: url("img/Back01.gif");
   background-repeat: repeat;
   background-color: #4643f0;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  /* overflow-x: hidden; Hide horizontal scrollbar */
 }
 
 /* header */
@@ -19,12 +19,15 @@ body {
   padding-right: 25px;
   padding-left: 25px;
 }
+
 .push {
   margin-left: auto;
 }
+
 .nav {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
@@ -36,9 +39,6 @@ a {
 
 /* content homepage */
 
-.container-2 div {
-  /*  border: 1px #ccc solid; */
-}
 .container-2 {
   /* border: 1px #ccc solid; */
   display: flex;
@@ -57,7 +57,7 @@ a {
   display: flex;
   justify-content: center;
   /* margin-bottom: 100px; */
-  padding:10px;
+  padding: 10px;
   margin-top: 40px;
 }
 
@@ -70,7 +70,7 @@ a {
   margin: auto;
 }
 
-@media (max-width: 650px) and (min-width: 400px){
+@media (max-width: 650px) and (min-width: 400px) {
   .container-2 {
     align-content: initial;
   }
@@ -130,39 +130,7 @@ h5 {
   width: 100%;
   max-width: 350px;
   transform: rotate(3deg);
-  /* border-radius:5px; */
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-
-
-/* for the work */
-
-.work {
-  background-color: #232325;
-  /* background-image: none; */
-  background-image: url("img/Back01.gif");
-  background-repeat: repeat;
-}
-
-.work01 {
-  text-align: left;
-  padding: 5px;
-  margin: 3px;
-  font-weight: 500;
-}
-
-.workimage {
-  width: 100%;
-  min-width: auto;
-  max-width: 600px;
-  min-height: auto;
-  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.workimage:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
 }
 
 @keyframes shake {
@@ -221,12 +189,11 @@ h5 {
 
 .blog-image {
   width: 100%;
-  max-width:425px;
-  transform: rotate(-2deg);
+  max-width: 725px;
 }
 
 li {
-  color:white;
+  color: white;
   min-width: auto;
   max-width: 625px;
 }
@@ -238,24 +205,22 @@ li {
 
 .post {
   padding: 8px;
-  /* box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25); */
 }
-
 
 /* for links page */
 
 .links {
   background-color: #4e1392;
-  padding:2px;
+  padding: 2px;
 
   -ms-word-break: break-all;
-    word-break: break-all;
-    /* Non standard for webkit */
-    word-break: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 .links:hover {
   animation: shake 0.5s;
@@ -264,5 +229,4 @@ li {
 
 .blog-image:hover {
   box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.473);
-
 }
