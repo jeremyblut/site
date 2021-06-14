@@ -58,7 +58,6 @@ a {
   justify-content: center;
   /* margin-bottom: 100px; */
   padding: 10px;
-  margin-top: 40px;
 }
 
 .fillspace {
@@ -70,7 +69,12 @@ a {
   margin: auto;
 }
 
-@media (max-width: 650px) and (min-width: 0px) {
+.spacer {
+  height:30px;
+  width:100%;
+}
+
+@media (max-width: 650px) and (min-width: 400px) {
   .container-2 {
     align-content: initial;
   }
