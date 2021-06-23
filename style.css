@@ -56,12 +56,20 @@ a {
 .container-3 {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 100px; */
-  padding: 10px;
+  align-content: center;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.container-3-box {
+  min-width: 260px;
+  max-width: 650px;
+  padding: 20px;
 }
 
 .fillspace {
-  height: 75vh;
+  height: 600px;
+  width:100%;
   display: flex;
 }
 
@@ -72,10 +80,23 @@ a {
 .spacer {
   height:30px;
   width:100%;
+  align-content: center;
 }
 
-@media (max-width: 650px) and (min-width: 400px) {
+@media (max-width: 650px) and (min-width: 0px) {
   .container-2 {
+    align-content: initial;
+  }
+  .container-3 {
+    align-content: initial;
+  }
+}
+
+@media (max-height: 650px) and (min-height: 0px) {
+  .container-2 {
+    align-content: initial;
+  }
+  .container-3 {
     align-content: initial;
   }
 }
