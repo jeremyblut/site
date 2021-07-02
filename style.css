@@ -26,15 +26,13 @@ body {
 
 .nav {
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-a {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* content homepage */
@@ -62,7 +60,6 @@ a {
 }
 
 .container-3-box {
-  min-width: 260px;
   max-width: 650px;
   padding: 20px;
 }
@@ -73,17 +70,17 @@ a {
   display: flex;
 }
 
-.centers {
+/* .centers {
   margin: auto;
-}
+} */
 
-.spacer {
+/* .spacer {
   height:30px;
   width:100%;
   align-content: center;
-}
+} */
 
-@media (max-width: 650px) and (min-width: 0px) {
+/* @media (max-width: 650px) and (min-width: 0px) {
   .container-2 {
     align-content: initial;
   }
@@ -99,7 +96,7 @@ a {
   .container-3 {
     align-content: initial;
   }
-}
+} */
 
 .break {
   flex-basis: 100%;
@@ -139,23 +136,35 @@ h4 {
   margin: 2px;
 }
 
-h5 {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 44px;
-  margin-bottom: 2px;
-  text-align: center;
-}
 
 /* for the index/home */
 
 .bodyimage {
   width: 100%;
   max-width: 350px;
-  transform: rotate(3deg);
+  transform: rotate(-3deg);
   box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.home-image-1 {
+  width:100%;
+  transform: rotate(2deg);
+}
+
+
+.home-image-2 {
+  width:100%;
+  transform: rotate(-2deg);
+}
+
+.home-image-1:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.home-image-2:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes shake {
@@ -214,8 +223,9 @@ h5 {
 
 .blog-image {
   width: 100%;
-  max-width: 725px;
+  max-width: 760px;
 }
+
 
 li {
   color: white;
@@ -237,6 +247,12 @@ li {
 .links {
   background-color: #4e1392;
   padding: 2px;
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+
 
   -ms-word-break: break-all;
   word-break: break-all;
@@ -252,6 +268,6 @@ li {
   animation-iteration-count: infinite;
 }
 
-.blog-image:hover {
+/* .blog-image:hover {
   box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.473);
-}
+} */
